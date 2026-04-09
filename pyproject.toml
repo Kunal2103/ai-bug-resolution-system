@@ -1,0 +1,19 @@
+[project]
+name = "ai-bug-resolution-system"
+version = "0.1.0"
+description = "An AI-powered system for analyzing, diagnosing, and resolving software bugs using LLMs and structured workflows."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.135.3",
+    "langchain-core>=1.2.27",
+    "langchain-google-genai>=4.2.1",
+    "langchain-groq>=1.1.2",
+    "langchain-openai>=1.1.12",
+    "langgraph>=1.1.6",
+    "nest-asyncio>=1.6.0",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.2",
+    "pyyaml>=6.0.3",
+    "uvicorn>=0.44.0",
+]
