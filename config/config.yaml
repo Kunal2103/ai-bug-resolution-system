@@ -1,0 +1,17 @@
+artifacts:
+  inputs:
+    bug_report: "data/inputs/bug_report.md"
+    logs: "data/inputs/system.log"
+  outputs:
+    final_report: "data/outputs/final_resolution.yaml"
+    repro_script: "data/outputs/repro_test.py"
+
+model:
+  provider: "groq"
+  name: "llama-3.3-70b-versatile"   
+  temperature: 0.1
+
+system_config:
+  max_retries: 3
+  timeout_seconds: 60
+  api_delay: 1

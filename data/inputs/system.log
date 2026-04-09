@@ -1,0 +1,10 @@
+[2026-04-08 17:01:22] INFO - [Database] Fetching local inventory for Store #402.
+[2026-04-08 17:01:23] INFO - [Inventory] Items found: ['apple', 'banana']
+[2026-04-08 17:01:25] ERROR - [DashboardEngine] Fatal Exception caught!
+Traceback (most recent call last):
+  File "main_dashboard.py", line 42, in render_ui
+    items = get_top_three_items(['apple', 'banana'])
+  File "/demo_app/inventory.py", line 11, in get_top_three_items
+    item_list[2]
+IndexError: list index out of range
+[2026-04-08 17:01:26] INFO - [System] Restarting UI service...
