@@ -37,6 +37,7 @@ cd AI_Bug_Resolution_System
 ```
 
 **2. Set up the environment**
+
 This project uses uv for **lightning-fast dependency** management.
 ```uv venv
 # This will automatically create the .venv and install exact dependencies from uv.lock
