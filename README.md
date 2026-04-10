@@ -2,7 +2,7 @@
 
 An autonomous, multi-agent AI system built with **LangGraph** that ingests bug reports, navigates codebases, analyzes logs, and programmatically reproduces and patches software failures.
 
-**Input Mode Declared:** Option A (Provided Mini-Repo)
+* **Input Mode Declared:** Option A (Provided Mini-Repo)
 
 ## 📖 Overview
 Engineering teams frequently receive bug reports with incomplete context. This system acts as an automated Senior Engineering task force. It uderstands the report, investigates the environment dependencies, hunts down the relevant source code, searches the logs, writes and executes a minimal reproducible test script, and generates a structured patch plan. 
