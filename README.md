@@ -48,3 +48,9 @@ Create a .env file in the root directory and add your Groq API key:
 ```bash
 GROQ_API_KEY=your_api_key_here
 ```
+
+## 🚀 Running the System
+To launch the multi-agent workflow, simply execute:
+```bash
+uv run python main.py
+```
