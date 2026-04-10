@@ -60,6 +60,7 @@ uv run python main.py
 ```
 
 **1. Inputs Location**   
+
   The system automatically pulls the buggy mini-repo, the markdown bug report, and the system logs from the **data/inputs/** directory.
 
 **2. Outputs Location**
