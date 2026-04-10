@@ -59,6 +59,7 @@ To launch the multi-agent workflow, simply execute:
 uv run python main.py
 ```
 
+### 📦 System Artifacts
 
 **1. Inputs Location**   
 
