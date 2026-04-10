@@ -37,7 +37,9 @@ def reproduction_node(state: GraphState) -> GraphState:
     try:
         repro_path = CONFIG['artifacts']['outputs']['repro_script']
         user_content = (
-            f"Triage: {state['triage_summary']}\nEvidence: {state['log_evidence']}\n"
+            f"Triage: {state['triage_summary']}\n"
+            f"Evidence: {state['log_evidence']}\n"
+            f"Target Code File: {state.get('relevant_files_context', 'Unknown')}\n" 
             f"Write a minimal python reproduction script to {repro_path} using your write_file tool. "
             f"Then, execute it using your execute_python_script tool."
         )
@@ -53,6 +55,7 @@ def fix_planner_node(state: GraphState) -> GraphState:
             f"Triage: {state['triage_summary']}\n"
             f"Evidence: {state['log_evidence']}\n"
             f"Repro Result: {state['repro_execution_result']}\n"
+            f"Target Code File: {state.get('relevant_files_context', 'Unknown')}\n" 
             "Propose a detailed patch plan. If you need to verify the source code, use the read_file tool."
         )
         result = execute_agent("Fix_Planner_Agent", FIX_PLANNER_AGENT_PROMPT, user_content, tools=[read_file])
@@ -65,6 +68,8 @@ def reviewer_node(state: GraphState) -> GraphState:
         user_content = (
             f"Triage: {state['triage_summary']}\n"
             f"Evidence: {state['log_evidence']}\n"
+            f"Repro Script Path: {state.get('repro_script_path', 'Unknown')}\n" 
+            f"Repro Result: {state.get('repro_execution_result', 'Unknown')}\n" 
             f"Fix Plan: {state['fix_plan']}\n"
             "Review the plan and generate the final BugResolutionReport. Ensure it matches the structured schema."
         )
@@ -72,7 +77,6 @@ def reviewer_node(state: GraphState) -> GraphState:
         state["final_report"] = result
         return state
     except Exception as e: raise CustomException(e, sys)
-
 
 def dependency_analyst_node(state: GraphState) -> GraphState:
     try:
