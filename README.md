@@ -50,7 +50,7 @@ Create a .env file in the root directory and add your Groq API key:
 GROQ_API_KEY=your_api_key_here
 ```
 
-## 🚀 Running the System
+## ▶️ Running the System
 To launch the multi-agent workflow, simply execute:
 ```bash
 uv run python main.py
@@ -67,7 +67,7 @@ Upon successful execution, the system generates two critical artifacts in the **
    - **final_resolution.yaml**: The structured report containing the bug summary, log evidence, root cause hypothesis, and patch plan.
 
 
-##  Traceability and Logging
+##  🔍 Traceability and Logging
 To ensure complete transparency of agent decisions, this system uses a **custom centralized logger**. When running main.py, the **console will output a clear trace of:**
 
    - Which agent is currently active.
