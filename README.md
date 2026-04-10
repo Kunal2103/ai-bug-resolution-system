@@ -71,22 +71,23 @@ Upon successful execution, the system generates two critical artifacts in the **
 
    - **final_resolution.yaml**: The structured report containing the bug summary, log evidence, root cause hypothesis, and patch plan.
      
-     ### 🐛 Verifying the Minimal Repro
-         - The system generates a minimal reproducible test. You can run this standalone script to verify the bug exists:
-
-         ### Command to run:
-         ```bash
+     ## 🐛 Verifying the Minimal Repro
+   
+     - The system generates a minimal reproducible test.
+     - You can run this standalone script to verify the bug exists.
+     
+     ### Command to run
+     
          python data/outputs/repro_test.py
-         
-
-         ### Expected Failing Output:
-         - The script is designed to fail consistently and should produce the exact error caught by the **Log Analyst**:
-
-         Traceback (most recent call last):
-         File "data/outputs/repro_test.py", line ...
-         ...
-         IndexError: list index out of range
-         ```
+     
+     ### Expected Failing Output
+     
+     - The script is designed to fail consistently and should produce the exact error caught by the **Log Analyst**:
+     
+     Traceback (most recent call last):
+     File "data/outputs/repro_test.py", line ...
+     ...
+     IndexError: list index out of range
 
 ##  🔍 Traceability and Logging
 To ensure complete transparency of agent decisions, this system uses a **custom centralized logger**. When running main.py, the **console will output a clear trace of:**
