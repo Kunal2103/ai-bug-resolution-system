@@ -79,7 +79,7 @@ Upon successful execution, the system generates two critical artifacts in the **
          python data/outputs/repro_test.py
          
 
-         *Expected Failing Output:*
+         ### Expected Failing Output:
          - The script is designed to fail consistently and should produce the exact error caught by the **Log Analyst**:
 
          Traceback (most recent call last):
