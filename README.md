@@ -11,7 +11,7 @@ Engineering teams frequently receive bug reports with incomplete context. This s
 This system utilizes a deterministic **LangGraph** state machine to orchestrate 7 specialized AI agents. Data is passed via a shared `GraphState`, ensuring explicit and safe handoffs.
 
 1. **Triage Agent:** Extracts symptoms, expected vs. actual behavior, and prioritizes initial hypotheses.
-2. **Dependency Analyst:** Inspects configuration files (`requirements.txt`, `pyproject.toml`) to rule out environment/versioning conflicts before analyzing code.
+2. **Dependency Analyst:** Inspects configuration files (`requirements.txt`) to rule out environment/versioning conflicts before analyzing code.
 3. **Repo Navigator:** Autonomously explores the directory structure using sequential tool-calling to pinpoint the exact source files containing the bug.
 4. **Log Analyst:** Uses context from the Navigator to execute targeted regex searches over system logs, extracting stack traces and anomalies.
 5. **Reproduction Agent:** Acts as an automated QA engineer. It writes a minimal reproduction script (`repro_test.py`), executes it in the environment, and loops to self-correct its own code until the target bug is successfully triggered.
