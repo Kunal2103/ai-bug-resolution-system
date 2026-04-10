@@ -45,4 +45,6 @@ uv pip install -r requirements.txt
 
 **3. Configure API Keys**
 Create a .env file in the root directory and add your Groq API key:
+```bash
 GROQ_API_KEY=your_api_key_here
+```
