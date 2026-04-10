@@ -81,4 +81,4 @@ To ensure complete transparency of agent decisions, this system uses a **custom 
 
    - API throttling pauses and retry attempts.
 
-These logs provide a complete audit trail of the AI's reasoning and execution path.
+This centralized logging ensures full **traceability**, providing a transparent audit trail of the AI's decision-making process.
