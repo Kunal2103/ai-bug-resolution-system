@@ -78,19 +78,19 @@ uv run python main.py
      
      #### Command to run:-
      
-        uv run python data/outputs/repro_test.py
+         uv run python data/outputs/repro_test.py
      
      #### Expected Failing Output:-
      
      - The script is designed to fail consistently and should produce the exact error caught by the **Log Analyst**:
      
-       Traceback (most recent call last):
-       
-       File "data/outputs/repro_test.py", line ...
-  
-       ...
-  
-       IndexError: list index out of range
+        Traceback (most recent call last):
+        
+        File "data/outputs/repro_test.py", line ...
+   
+        ...
+   
+        IndexError: list index out of range
 
 ##  🔍 Traceability and Logging
 To ensure complete transparency of agent decisions, this system uses a **custom centralized logger**. When running main.py, the **console will output a clear trace of:**
