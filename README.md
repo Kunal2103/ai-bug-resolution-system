@@ -74,15 +74,14 @@ Upon successful execution, the system generates two critical artifacts in the **
      ### 🐛 Verifying the Minimal Repro
          - The system generates a minimal reproducible test. You can run this standalone script to verify the bug exists:
 
-         # Command to run:
+         ### Command to run:
          ```bash
          python data/outputs/repro_test.py
-         ```
+         
 
          *Expected Failing Output:*
-         ```text
          - The script is designed to fail consistently and should produce the exact error caught by the **Log Analyst**:
-         ```bash
+
          Traceback (most recent call last):
          File "data/outputs/repro_test.py", line ...
          ...
