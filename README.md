@@ -5,7 +5,7 @@ An autonomous, multi-agent AI system built with **LangGraph** that ingests bug r
 **Input Mode Declared:** Option A (Provided Mini-Repo)
 
 ## 📖 Overview
-Engineering teams frequently receive bug reports with incomplete context. This system acts as an automated Senior Engineering task force. It reads the ticket, investigates the environment dependencies, hunts down the relevant source code, searches the logs, writes and executes a minimal reproducible test script, and generates a structured patch plan. 
+Engineering teams frequently receive bug reports with incomplete context. This system acts as an automated Senior Engineering task force. It uderstands the report, investigates the environment dependencies, hunts down the relevant source code, searches the logs, writes and executes a minimal reproducible test script, and generates a structured patch plan. 
 
 ## 🧠 Multi-Agent Architecture
 This system utilizes a deterministic **LangGraph** state machine to orchestrate 7 specialized AI agents. Data is passed via a shared `GraphState`, ensuring explicit and safe handoffs.
