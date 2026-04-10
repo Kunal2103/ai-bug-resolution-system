@@ -34,3 +34,6 @@ This system utilizes a deterministic **LangGraph** state machine to orchestrate 
 ```bash
 git clone <your-repo-url>
 cd AI_Bug_Resolution_System
+
+
+**2. Set up the environment**
