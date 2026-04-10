@@ -42,7 +42,8 @@ This project uses uv for **lightning-fast dependency** management.
 ```uv venv
 # This will automatically create the .venv and install exact dependencies from uv.lock
 uv sync
-#activate the environment
+
+# activate the environment
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
