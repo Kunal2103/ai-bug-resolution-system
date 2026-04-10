@@ -78,7 +78,7 @@ uv run python main.py
      
      #### Command to run:-
      
-         python data/outputs/repro_test.py
+         uv run python data/outputs/repro_test.py
      
      #### Expected Failing Output:-
      
