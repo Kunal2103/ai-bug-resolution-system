@@ -39,8 +39,9 @@ cd AI_Bug_Resolution_System
 **2. Set up the environment**
 This project uses uv for lightning-fast dependency management (or standard pip).
 ```uv venv
+# This will automatically create the .venv and install exact dependencies from uv.lock
+uv sync
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-uv pip install -r requirements.txt
 ```
 
 **3. Configure API Keys**
