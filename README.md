@@ -34,6 +34,11 @@ This system utilizes a deterministic **LangGraph** state machine to orchestrate 
 ```bash
 git clone <your-repo-url>
 cd AI_Bug_Resolution_System
-
+```
 
 **2. Set up the environment**
+This project uses uv for lightning-fast dependency management (or standard pip).
+```uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+uv pip install -r requirements.txt
+```
