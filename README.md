@@ -1,4 +1,4 @@
-# 🚀 AI Bug Resolution System (Assessment 2)
+# 🚀 AI Bug Resolution System
 
 An autonomous, multi-agent AI system built with **LangGraph** that ingests bug reports, navigates codebases, analyzes logs, and programmatically reproduces and patches software failures.
 
